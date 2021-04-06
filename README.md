@@ -1,4 +1,4 @@
-# Pesto Exercises Repository
+2# Pesto Exercises Repository
 
 - This repository contains exercises.
 - The branches are named using the convention **DAY**-**SEGMENT**. For example, `day-4-segment-2`

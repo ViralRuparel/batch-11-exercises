@@ -1,7 +1,9 @@
+/* eslint-disable linebreak-style */
+
 import { yourName } from './yourName';
 
-describe('Write your name in the test', () => {
+describe('write yourName in the test', () => {
   test('yourName should return my name', () => {
-    expect(yourName()).toBe('Harish');
+    expect(yourName()).toBe('Devansh');
   });
 });

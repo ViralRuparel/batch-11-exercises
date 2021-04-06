@@ -1,8 +1,3 @@
+/* eslint-disable linebreak-style */
+ export const yourName = () => 'Devansh';
 
-function yourName() {
-  return 'Harish';
-}
-
-export {
-  yourName,
-};
