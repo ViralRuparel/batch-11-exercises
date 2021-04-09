@@ -1,8 +1,5 @@
 
-function returnAFunctionTest(...args) {
-  return args;
+export const returnAFunctionTest = () => {
+  return 'Function';
 }
 
-export {
-  returnAFunctionTest,
-};

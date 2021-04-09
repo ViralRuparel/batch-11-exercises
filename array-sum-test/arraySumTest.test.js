@@ -1,10 +1,10 @@
-const sumArray = (...args) => args.reduce((acc, el) => acc + el, 0);
+import { sumArrayTest } from './arraySumTest' 
 
 describe('arraySum test', () => {
   test('should sum the array of numbers', () => {
     const fixture = [1, 2, 3, 4, 5];
-    const sum = sumArray(...fixture);
+    const sum = sumArrayTest(fixture);
 
-    expect(sum).toEqual(10);
+    expect(sum).toEqual(15);
   });
 });

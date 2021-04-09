@@ -1,9 +1,9 @@
-const returnTrue = () => true;
+import { returnTrueTest } from './returnTrueTest';
 
 describe('returnTrue', () => {
   test('should return true as a boolean', () => {
-    expect(returnTrue()).toBe(true);
-    expect(returnTrue()).toBeTruthy();
-    expect(returnTrue()).toBeFalsy();
+    expect(returnTrueTest(3)).toBe(true);
+    expect(returnTrueTest(4)).toBeTruthy();
+    expect(returnTrueTest('hey')).toBeFalsy();
   });
 });

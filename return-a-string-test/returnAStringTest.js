@@ -1,8 +1,4 @@
 
-function returnAStringTest(...args) {
-  return args;
+export const returnAStringTest = (string) => {
+  return `${string}`;
 }
-
-export {
-  returnAStringTest,
-};

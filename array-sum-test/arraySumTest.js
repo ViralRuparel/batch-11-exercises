@@ -1,8 +1,5 @@
+const arrayQueue = [1, 2, 3, 4, 5, 6, 7];
 
-function arraySumTest(...args) {
-  return args;
-}
+export const sumArrayTest = (Queue) => Queue.reduce((fr, point) => fr + point, 0);
 
-export {
-  arraySumTest,
-};
+sumArrayTest(arrayQueue); 

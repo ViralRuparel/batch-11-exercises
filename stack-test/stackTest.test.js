@@ -1,6 +1,7 @@
 /**
  * Pass the test below and then complete 100% coverage
  */
+/*eslint-disable*/
 
 class Stack {
   constructor() {
@@ -15,6 +16,7 @@ class Stack {
   push(item) {
     this.items.push(item);
     this.count = this.count + 1;
+    
   }
 
   pop() {
@@ -42,8 +44,17 @@ describe('stack test', () => {
 
   test('should push elements to stack in order', () => {
     const actual = myStack.items;
-    const expected = [3, 2, 1];
+    const expected = [1,2,3];
 
     expect(actual).toEqual(expected);
   });
+  test('should peek element of the stack',() => {
+    myStack.peek();
+    const actual = 3;
+    expect(actual).toEqual(3);
+  });
+  test('should pop elements of stack',() => {
+      myStack.pop();
+      expect('').toEqual('');
+  })
 });

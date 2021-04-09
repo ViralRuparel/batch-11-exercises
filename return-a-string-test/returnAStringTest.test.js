@@ -1,7 +1,7 @@
-const returnAString = () => 'helloworld';
+import { returnAStringTest } from './returnAStringTest';
 
 describe('returnAString', () => {
   test('should return a string', () => {
-    expect(returnAString()).toContain('word');
+    expect(returnAStringTest('word')).toContain('word');
   });
 });
