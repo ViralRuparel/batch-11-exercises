@@ -1,8 +1,5 @@
 
-function objectPairs(...args) {
-  return args;
+export const objectPairs = (args) => {
+  return Object.entries(args);
 }
 
-export {
-  objectPairs,
-};

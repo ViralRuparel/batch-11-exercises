@@ -1,8 +1,5 @@
 
-function objectKeys(...args) {
-  return args;
+export const objectKeys = (args) => {
+  return Object.keys(args);
 }
 
-export {
-  objectKeys,
-};

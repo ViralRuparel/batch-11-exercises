@@ -1,8 +1,6 @@
 
-function objectDefaults(...args) {
-  return args;
+export const objectDefaults = (objToAdded,objDefault) => {
+  return Object.assign(objDefault,objToAdded)
 }
 
-export {
-  objectDefaults,
-};
+

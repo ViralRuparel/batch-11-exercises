@@ -1,8 +1,5 @@
 
-function objectValues(...args) {
-  return args;
+export const objectValues = (args) => {
+  return Object.values(args);
 }
 
-export {
-  objectValues,
-};
