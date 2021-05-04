@@ -17,15 +17,15 @@ describe('SavingsAccount', () => {
     expect(() => new SavingsAccount('123', 'kohli@gmail.com', 'Virat', 'Kohli')).toThrow('Account Number must be a 6-digit number');
   });
 
-  test('should throw error if account number length is not equal to 6', () => {
+  test('should throw error if invalid email', () => {
     expect(() => new SavingsAccount('123456', 'kohli@', 'Virat', 'Kohli')).toThrow('Invalid e-mail');
   });
 
-  test('should throw error if account number length is not equal to 6', () => {
+  test('should throw error if first name is not between 3 and 20 characters long', () => {
     expect(() => new SavingsAccount('123456', 'kohli@gmail.com', 'V', 'Kohli')).toThrow('First name must be between 3 and 20 characters long');
   });
 
-  test('should throw error if account number length is not equal to 6', () => {
+  test('should throw error if last name does not contain english letters', () => {
     expect(() => new SavingsAccount('123456', 'kohli@gmail.com', 'Virat', 'Kohli5')).toThrow('Last name must contain english alphabets only');
   });
 });
